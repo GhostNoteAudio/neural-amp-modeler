@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Train Simple",
+            "type": "python",
+            "request": "launch",
+            "module": "nam.train.train_simple",
+            "args": ["--input-file", "C:\\Dev\\nam-data\\v2_0_0.wav", "--input-dir", "C:\\Dev\\nam-data\\input", "--output-dir", "C:\\Dev\\nam-data\\output"],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Capture List",
+            "type": "python",
+            "request": "launch",
+            "module": "nam.train.capture_list",
+            "args": ["--start", "3", "--input-file", "C:\\Dev\\nam-data\\test.wav", "--list-file", "nam-capture-list.txt", "--output-dir", "C:\\Dev\\nam-data\\output"],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
